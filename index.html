@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+     <link rel="stylesheet" href="css/stylelogin.css">
+     <style>
+        #about{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            background-color: white;
+            border-radius: 4px;
+        }
+        #about:hover{
+            color:rgb(43, 216, 9);
+        }
+     </style>
+</head>
+<body>
+    <img src="picture/OVM_2.jpg" alt="Online Voting Machine" class="ovm">
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="about" href="api/about.html">About Us</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="about" href="api/iNotes.html">isAnyProblem</a>
+    <br><br><h1>Online Voting System</h1><br><br><hr>
+    <form action="api/login.php" method="POST" enctype="multipart/form-data">
+        <h2>login</h2>
+        <input required type="number" name="mobile" id="" placeholder="Enter Your Mobile No."><br>
+        <input required type="password"  name="password" id="" placeholder="Enter your password"><br>
+        <input required type="tel" pattern="[1-9]{12}" name="aadhar" id="" placeholder="Enter your Aadhar No."><br>
+       <select name="role" id="">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select><br>
+        <input type="submit" value="login" id="btn">
+        <h3>New user?<a href="api/reg.html">Register here</a></h3>
+    </form><br>
+
+</body>
+</html>
